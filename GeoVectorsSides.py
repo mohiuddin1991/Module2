@@ -6,7 +6,7 @@
 
 
 import sys                                          #for path to external scripts
-sys.path.insert(0, '/home/VASIREDDY-YASWANTH/github/geometry/codes/CoordGeo') #path to my scripts
+sys.path.insert(0, './CoordGeo') #path to my scripts
 import numpy as np
 import numpy.linalg as LA
 import matplotlib.pyplot as plt
@@ -104,7 +104,7 @@ plt.grid() # minor
 plt.axis('equal')
 
 #if using termux
-plt.savefig('figs/triangle/vector1.pdf')
+plt.savefig('vector1.png')
 #subprocess.run(shlex.split("termux-open ./figs/tri_sss.pdf"))
 #else
 plt.show()
