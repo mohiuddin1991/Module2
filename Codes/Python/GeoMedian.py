@@ -60,6 +60,9 @@ x_CF = line_gen(C,F)
 x_AB = line_gen(A,B)
 x_BC = line_gen(B,C)
 x_CA = line_gen(C,A)
+x_DE = line_gen(D,E)
+x_DF = line_gen(D,F)
+
 
 #Plotting all lines
 plt.plot(x_AB[0,:],x_AB[1,:],label='$AB$')
@@ -68,6 +71,9 @@ plt.plot(x_CA[0,:],x_CA[1,:],label='$CA$')
 plt.plot(x_AD[0,:],x_AD[1,:],label='$AD$')
 plt.plot(x_BE[0,:],x_BE[1,:],label='$BE$')
 plt.plot(x_CF[0,:],x_CF[1,:],label='$CF$')
+plt.plot(x_DE[0,:],x_DE[1,:],label='$DE$')
+plt.plot(x_DF[0,:],x_DF[1,:],label='$DF$')
+
 
 #Labeling the coordinates
 tri_coords = np.block([[A,B,C,G]])
