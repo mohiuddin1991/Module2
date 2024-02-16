@@ -17,7 +17,7 @@ Consider a triangle with vertices
 \label{eq:tri-pts}
 \vec{A}=\myvec{-3 \\ -5},\,
 \vec{B}=\myvec{3\\-5},\,
-	\vec{c}=\myvec{-4\\-3},\,
+\vec{c}=\myvec{-4\\-3},\,
 \end{align}
 
 \section{Vectors}
@@ -30,7 +30,7 @@ Consider a triangle with vertices
 The matrix of the veritices of the triangle is defined as
 		\begin{align}
 			\vec{P} &= \myvec{\vec{A} & \vec{B} &\vec{C}} \\
-            &=\myvec{-3 & 3 & -4 \\ -5 & -5 & -3}
+                                &=\myvec{-3 & 3 & -4 \\ -5 & -5 & -3}
 		\end{align}
 \begin{figure}[H]
     \centering
@@ -53,7 +53,7 @@ The matrix of the veritices of the triangle is defined as
 \begin{align}
 \vec{M} &= \myvec{\vec{A}-\vec{B} & \vec{B}-\vec{C} & \vec{C}-\vec{A}} \\
 	&= \myvec{\vec{A} & \vec{B} &\vec{C}} \myvec{1 & 0 & -1 \\ -1 & 1 & 0 \\ 0 & -1 & 1} \\
- &=\myvec{-3 & 3 & -4 \\ -5 & -5 & -3}\myvec{1 & 0 & -1 \\ -1 & 1 & 0 \\ 0 & -1 & 1} 
+        &=\myvec{-3 & 3 & -4 \\ -5 & -5 & -3}\myvec{1 & 0 & -1 \\ -1 & 1 & 0 \\ 0 & -1 & 1} 
  \end{align}
  Using Matrix multiplication
  \begin{align}
@@ -140,7 +140,7 @@ Using matrix multiplication
 			  \vec{B}-\frac{\vec{C}+\vec{A}}{2} &
 			  \vec{C}-\frac{\vec{A}+\vec{B}}{2}} 
 			  \\
-			  &= \myvec{\vec{A} & \vec{B} &\vec{C}}
+			 &= \myvec{\vec{A} & \vec{B} &\vec{C}}
 			  \myvec{
 				  1 & -\frac{1}{2} & -\frac{1}{2}
 				  \\
@@ -148,8 +148,8 @@ Using matrix multiplication
 				  \\
 				  -\frac{1}{2} & -\frac{1}{2} & 1
 				  } 
-      \\
-      &= \myvec{-3 & 3 & -4 \\ -5 & -5 & -3}\myvec{
+                           \\
+                          &= \myvec{-3 & 3 & -4 \\ -5 & -5 & -3}\myvec{
 				  1 & -\frac{1}{2} & -\frac{1}{2}
 				  \\
 				  -\frac{1}{2} & 1 & -\frac{1}{2}
@@ -228,14 +228,14 @@ Using Gauss-Elimination method:
 \item Find the normal matrix for the altitudes \\
 \solution  The desired matrix is 
 \begin{align}
-\vec{M}_2 &= \myvec{\vec{B}-\vec{C} & \vec{C}-\vec{A} & \vec{A}-\vec{B} }
-\\
-&= 
-\myvec{\vec{A} & \vec{B} &\vec{C}}
-\myvec{ 0 & -1 & 1 \\ 1 & 0 & -1 \\ -1 & 1 & 0} \\
-&= 
-\myvec{-3 & 3 & -4 \\ -5 & -5 & -3}
-\myvec{ 0 & -1 & 1 \\ 1 & 0 & -1 \\ -1 & 1 & 0}
+  \vec{M}_2 &= \myvec{\vec{B}-\vec{C} & \vec{C}-\vec{A} & \vec{A}-\vec{B} }
+  \\
+   &= 
+   \myvec{\vec{A} & \vec{B} &\vec{C}}
+   \myvec{ 0 & -1 & 1 \\ 1 & 0 & -1 \\ -1 & 1 & 0} \\
+   &= 
+   \myvec{-3 & 3 & -4 \\ -5 & -5 & -3}
+   \myvec{ 0 & -1 & 1 \\ 1 & 0 & -1 \\ -1 & 1 & 0}
 \end{align}
 Using Matrix multiplication 
 \begin{align}
@@ -250,9 +250,9 @@ Using Matrix multiplication
 \end{align}
 Using matrix multiplication
 \begin{align}
- \vec{M}^{\top}\vec{P}    &=\myvec{ -11 & 31 & -22 \\ -7 & -13 & -2 \\ 18 & -18 & 24 } \\
+   \vec{M}^{\top}\vec{P}    &=\myvec{ -11 & 31 & -22 \\ -7 & -13 & -2 \\ 18 & -18 & 24 } \\
     \vec{c}_2 &= \text{diag}\brak{ \myvec{ -11 & 31 & -22 \\ -7 & -13 & -2 \\ 18 & -18 & 24 } } \\
- \vec{c}_2   &= \myvec{ -11 & -13 & 24}
+    \vec{c}_2   &= \myvec{ -11 & -13 & 24}
 \end{align}
 \end{enumerate}
 \begin{figure}[H]
